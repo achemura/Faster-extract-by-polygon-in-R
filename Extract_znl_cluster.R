@@ -1,7 +1,9 @@
-achemura@gmail.com
 V1.1. April 2020
 
-
+#This script summarieses raster data to regions based on a shapefile to calculate number of pixel in each class (binary, 1:0). 
+#The idea is to convert the shapefile into points and extract with the points and then summarize. Data is located in specific folders, each with 40 rasters to be summarized
+#This process in 50 times faster for large files that the raster::extract method. 
+#The output is a CSV file. 
 
 rm(list=ls())
 gc()
