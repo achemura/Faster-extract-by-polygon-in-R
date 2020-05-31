@@ -4,6 +4,7 @@ V1.1. April 2020
 #The idea is to convert the shapefile into points and extract with the points and then summarize. Data is located in specific folders, each with 40 rasters to be summarized
 #This process in 50 times faster for large files that the raster::extract method. 
 #The output is a CSV file. 
+#For this code the sumamry are being caluclated from 9 folders which are summarized using one polygon shapefile.
 
 rm(list=ls())
 gc()
