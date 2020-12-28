@@ -33,7 +33,7 @@ for (i in folders){
   # stack all the files in the certain folder
   s <- stack(All_model.files)
   
-  # The raster files does nnot have projection. Therefore we set projection of the shapefile 
+  # The raster files does not have projection. Therefore we set projection of the shapefile 
   proj4string(s) = proj4string(dist.shape)
   
   # we are giving names to the all the bands from above filename
@@ -42,7 +42,7 @@ for (i in folders){
   # Converting stacked raster into points usinf raster to pints
   r.pts = rasterToPoints(s,spatial = T)
   
-  # COnverting points and shapefile to sf library format to spatial join with shapefile
+  # Converting points and shapefile to sf library format to spatial join with shapefile
   r.pts_sf = sf::st_as_sf(r.pts)
   sf_shp = sf::st_as_sf(dist.shape)
   
